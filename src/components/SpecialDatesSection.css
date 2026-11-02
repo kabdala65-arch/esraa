@@ -1,0 +1,64 @@
+.dates-section {
+  padding: 100px 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.dates-section .section-header {
+  margin-bottom: 50px;
+}
+
+.dates-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.date-card {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(168, 85, 247, 0.15));
+  border: 1px solid rgba(255, 192, 203, 0.25);
+  border-radius: 24px;
+  padding: 36px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.date-card:hover {
+  border-color: rgba(236, 72, 153, 0.5);
+}
+
+.date-icon {
+  font-size: 34px;
+}
+
+.date-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  direction: ltr;
+}
+
+.date-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fde2ed;
+}
+
+.date-text {
+  font-size: 15px;
+  color: #fde2ed;
+  opacity: 0.8;
+  line-height: 1.6;
+}
